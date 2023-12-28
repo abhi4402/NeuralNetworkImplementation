@@ -18,12 +18,12 @@ data = np.array(data)
 m, n = data.shape
 np.random.shuffle(data)  # shuffle before splitting into dev and training sets
 
-data_train = data[0:30000].T
+data_train = data[0:3000].T
 Y_train = data_train[0]
 X_train = data_train[1:n]
 X_train = X_train / 255.0
 
-data_dev = data[30000:m].T
+data_dev = data[3000:m].T
 Y_dev = data_dev[0]
 X_dev = data_dev[1:n]
 X_dev = X_dev / 255
